@@ -43,6 +43,10 @@ import java.util.ArrayList;
 public class QuickSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    private static final String[] qsCustPreferences = { "qs_tile_shape",
+            "qqs_num_columns", "qqs_num_columns_landscape",
+            "qs_num_columns", "qs_num_columns_landscape" };
+
     private static final String QUICK_PULLDOWN = "status_bar_quick_qs_pulldown";
 
     private ListPreference mQuickPulldown;
@@ -62,6 +66,18 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         mQuickPulldown.setValue(String.valueOf(qpmode));
         mQuickPulldown.setSummary(mQuickPulldown.getEntry());
         mQuickPulldown.setOnPreferenceChangeListener(this);
+
+        boolean qsStyleRound = Settings.Secure.getIntForUser(getContext().getContentResolver(),
+                Settings.Secure.QS_STYLE_ROUND, 1, UserHandle.USER_CURRENT) == 1;
+
+        if (!qsStyleRound) {
+            for (String key : qsCustPreferences) {
+                Preference preference = prefScreen.findPreference(key);
+                if (preference != null) {
+                    preference.setEnabled(false);
+                }
+            }
+        }
 
     }
 
