@@ -385,4 +385,10 @@
     <string name="keybox_invalid_xml">Invalid XML: missing required data</string>
     <string name="keybox_file_loaded">XML file loaded</string>
     <string name="keybox_file_read_failed">Failed to read XML</string>
+    <string name="games_spoof_title">Unlock higher FPS in games</string>
+    <string name="games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+ 
+    <!-- Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons_title">Combined signal icons</string>
+    <string name="combined_status_bar_signal_icons_summary">Show single combined icon for WiFi and mobile signal</string>    
 </resources>
