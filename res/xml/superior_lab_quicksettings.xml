@@ -28,6 +28,13 @@
             android:title="@string/status_bar_custom_header_title"
             android:summary="@string/status_bar_custom_header_summary" />
 
+	<com.superior.support.preferences.SecureSettingListPreference
+            android:key="qs_style_round"
+            android:title="@string/qs_style_title"
+            android:entries="@array/qs_style_entries"
+            android:entryValues="@array/qs_style_values"
+            android:defaultValue="1" />
+
         <com.superior.support.preferences.SecureSettingListPreference
             android:key="qs_tile_shape"
             android:title="@string/qs_tile_shape"
