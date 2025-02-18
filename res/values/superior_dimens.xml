@@ -19,5 +19,4 @@
      <dimen name="superior_radius_merge">5dp</dimen>
      <dimen name="superior_pref_horizontal_padding">16dp</dimen>
      <dimen name="superior_pref_horizontal_padding-negative">-16dp</dimen>
-     <dimen name="superior_pref_vertical_padding">32dp</dimen>
 </resources>
