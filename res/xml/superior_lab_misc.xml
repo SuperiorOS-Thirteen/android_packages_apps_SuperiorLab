@@ -39,5 +39,12 @@
             android:summary="@string/qs_weather_settings_summary"
             android:fragment="com.superior.lab.fragments.OmniJawsSettings" />
 
+    <!-- Spoof -->
+    <Preference
+        android:key="spoofing"
+        android:title="@string/spoofing_title"
+        android:summary="@string/spoofing_summary"
+        android:fragment="com.superior.lab.fragments.Spoof" />
+
     </PreferenceCategory>
 </PreferenceScreen>
